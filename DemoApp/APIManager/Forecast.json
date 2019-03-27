@@ -1,0 +1,194 @@
+{
+	"location": {
+		"name": "New Delhi",
+		"region": "Delhi",
+		"country": "India",
+		"lat": 28.6,
+		"lon": 77.2,
+		"tz_id": "Asia/Kolkata",
+		"localtime_epoch": 1553681001,
+		"localtime": "2019-03-27 15:33"
+	},
+	"current": {
+		"last_updated_epoch": 1553679911,
+		"last_updated": "2019-03-27 15:15",
+		"temp_c": 31.0,
+		"temp_f": 87.8,
+		"is_day": 1,
+		"condition": {
+			"text": "Mist",
+			"icon": "//cdn.apixu.com/weather/64x64/day/143.png",
+			"code": 1030
+		},
+		"wind_mph": 11.9,
+		"wind_kph": 19.1,
+		"wind_degree": 310,
+		"wind_dir": "NW",
+		"pressure_mb": 1014.0,
+		"pressure_in": 30.4,
+		"precip_mm": 0.0,
+		"precip_in": 0.0,
+		"humidity": 27,
+		"cloud": 50,
+		"feelslike_c": 29.6,
+		"feelslike_f": 85.3,
+		"vis_km": 4.0,
+		"vis_miles": 2.0,
+		"uv": 7.0,
+		"gust_mph": 13.0,
+		"gust_kph": 20.9
+	},
+	"forecast": {
+		"forecastday": [{
+			"date": "2019-03-27",
+			"date_epoch": 1553644800,
+			"day": {
+				"maxtemp_c": 38.3,
+				"maxtemp_f": 100.9,
+				"mintemp_c": 26.4,
+				"mintemp_f": 79.5,
+				"avgtemp_c": 32.2,
+				"avgtemp_f": 90.0,
+				"maxwind_mph": 10.5,
+				"maxwind_kph": 16.9,
+				"totalprecip_mm": 0.0,
+				"totalprecip_in": 0.0,
+				"avgvis_km": 17.5,
+				"avgvis_miles": 10.0,
+				"avghumidity": 23.0,
+				"condition": {
+					"text": "Partly cloudy",
+					"icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+					"code": 1003
+				},
+				"uv": 9.4
+			},
+			"astro": {
+				"sunrise": "06:18 AM",
+				"sunset": "06:36 PM",
+				"moonrise": "12:09 AM",
+				"moonset": "10:55 AM"
+			}
+		}, {
+			"date": "2019-03-28",
+			"date_epoch": 1553731200,
+			"day": {
+				"maxtemp_c": 40.4,
+				"maxtemp_f": 104.7,
+				"mintemp_c": 26.9,
+				"mintemp_f": 80.4,
+				"avgtemp_c": 34.1,
+				"avgtemp_f": 93.4,
+				"maxwind_mph": 10.7,
+				"maxwind_kph": 17.3,
+				"totalprecip_mm": 0.0,
+				"totalprecip_in": 0.0,
+				"avgvis_km": 20.0,
+				"avgvis_miles": 12.0,
+				"avghumidity": 21.0,
+				"condition": {
+					"text": "Partly cloudy",
+					"icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+					"code": 1003
+				},
+				"uv": 9.6
+			},
+			"astro": {
+				"sunrise": "06:16 AM",
+				"sunset": "06:37 PM",
+				"moonrise": "01:04 AM",
+				"moonset": "11:44 AM"
+			}
+		}, {
+			"date": "2019-03-29",
+			"date_epoch": 1553817600,
+			"day": {
+				"maxtemp_c": 39.4,
+				"maxtemp_f": 102.9,
+				"mintemp_c": 28.5,
+				"mintemp_f": 83.3,
+				"avgtemp_c": 34.7,
+				"avgtemp_f": 94.5,
+				"maxwind_mph": 5.8,
+				"maxwind_kph": 9.4,
+				"totalprecip_mm": 0.0,
+				"totalprecip_in": 0.0,
+				"avgvis_km": 20.0,
+				"avgvis_miles": 12.0,
+				"avghumidity": 20.0,
+				"condition": {
+					"text": "Partly cloudy",
+					"icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+					"code": 1003
+				},
+				"uv": 10.2
+			},
+			"astro": {
+				"sunrise": "06:15 AM",
+				"sunset": "06:37 PM",
+				"moonrise": "01:55 AM",
+				"moonset": "12:34 PM"
+			}
+		}, {
+			"date": "2019-03-30",
+			"date_epoch": 1553904000,
+			"day": {
+				"maxtemp_c": 42.4,
+				"maxtemp_f": 108.3,
+				"mintemp_c": 29.9,
+				"mintemp_f": 85.8,
+				"avgtemp_c": 36.2,
+				"avgtemp_f": 97.2,
+				"maxwind_mph": 7.8,
+				"maxwind_kph": 12.6,
+				"totalprecip_mm": 0.0,
+				"totalprecip_in": 0.0,
+				"avgvis_km": 19.4,
+				"avgvis_miles": 12.0,
+				"avghumidity": 15.0,
+				"condition": {
+					"text": "Partly cloudy",
+					"icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+					"code": 1003
+				},
+				"uv": 9.9
+			},
+			"astro": {
+				"sunrise": "06:14 AM",
+				"sunset": "06:38 PM",
+				"moonrise": "02:42 AM",
+				"moonset": "01:27 PM"
+			}
+		}, {
+			"date": "2019-03-31",
+			"date_epoch": 1553990400,
+			"day": {
+				"maxtemp_c": 39.6,
+				"maxtemp_f": 103.3,
+				"mintemp_c": 29.6,
+				"mintemp_f": 85.3,
+				"avgtemp_c": 34.4,
+				"avgtemp_f": 93.9,
+				"maxwind_mph": 9.4,
+				"maxwind_kph": 15.1,
+				"totalprecip_mm": 1.1,
+				"totalprecip_in": 0.04,
+				"avgvis_km": 20.0,
+				"avgvis_miles": 12.0,
+				"avghumidity": 17.0,
+				"condition": {
+					"text": "Patchy rain possible",
+					"icon": "//cdn.apixu.com/weather/64x64/day/176.png",
+					"code": 1063
+				},
+				"uv": 9.7
+			},
+			"astro": {
+				"sunrise": "06:13 AM",
+				"sunset": "06:38 PM",
+				"moonrise": "03:25 AM",
+				"moonset": "02:19 PM"
+			}
+		}]
+	}
+}
