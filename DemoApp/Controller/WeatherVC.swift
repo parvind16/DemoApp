@@ -87,7 +87,6 @@ class WeatherVC: UIViewController {
 extension WeatherVC : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "ArticleDetailVCSegue", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
