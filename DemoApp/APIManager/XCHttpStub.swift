@@ -1,9 +1,8 @@
-
 //
 // XCTestHttpStub.swift
 //  SampleApp
 //
-//  Created by parvind bhatt on 12/02/19.
+//  Created by parvind bhatt on 27/03/19.
 //  Copyright © 2019 parvind bhatt. All rights reserved.
 //
 
@@ -19,8 +18,8 @@ enum XCHTTPMethod: String {
 }
 
 class XCHttpStub {
-    
-    static func start() {
+
+    /*static func start() {
         OHHTTPStubs.setEnabled(true)
     }
     
@@ -42,17 +41,17 @@ class XCHttpStub {
     
     static func request(withURL URL: String, withResponseFile responseFile: String) {
         
-    }
-    
+    }*/
+
     static func request(withPathRegex path: String, withResponseFile responseFile: String) {
         // Swift
         stub(condition: isHost(path)) { _ in
             // Stub it with our "wsresponse.json" stub file (which is in same bundle as self)
             let stubPath = FilePath(responseFile).path
-            return fixture(filePath: stubPath, headers: ["Content-Type":"application/json"])
+            return fixture(filePath: stubPath, headers: ["Content-Type": "application/json"])
         }
     }
-    
+
     static func request(withPathRegex path: String, withHttpMethod method: XCHTTPMethod, withResponseFile responseFile: String) {
         stub(condition: isPathRegex(path, withHttpMethod: method.rawValue)) { request in
             
@@ -90,35 +89,34 @@ class XCHttpStub {
             )
         }
     }
-    
+
 }
 
 class FilePath {
     var fileName: String
-    
+
     var path: String {
-        
+
         let applicationDocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
-        
+
         if let filePath = applicationDocumentsDirectory?.appendingPathComponent(fileName), FileManager.default.fileExists(atPath: filePath.absoluteString) {
             return filePath.absoluteString
         }
-        
+
         let bundel = Bundle(for: type(of: self))
-        
+
         if let filePath = bundel.path(forResource: fileName, ofType: nil), FileManager.default.fileExists(atPath: filePath) {
             return filePath
         }
-        
+
         return fileName
-        
+
     }
-    
+
     init(_ fileName: String) {
         self.fileName = fileName
     }
 }
-
 
 /**
  * Matcher for testing an `NSURLRequest`'s **path**.
@@ -161,11 +159,11 @@ public func isPathRegex(_ pathRegex: String, withHttpMethod method: String) -> O
 
 class Regex {
     let pattern: String
-    
+
     init(_ pattern: String) {
         self.pattern = pattern
     }
-    
+
     func test(input: String?) -> Bool {
         guard let testString = input else {
             return false

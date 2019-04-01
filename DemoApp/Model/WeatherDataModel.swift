@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct WeatherDataModel:Codable {
+struct WeatherDataModel: Codable {
 
     let location: Location
     let current: Current
-    let forecast:Forecast?
+    let forecast: Forecast?
     //Custom Keys
     enum CodingKeys: String, CodingKey {
         case location = "location"  //Custom keys
@@ -20,7 +20,7 @@ struct WeatherDataModel:Codable {
         case forecast = "forecast"
 
     }
-    
+
 }
 
 struct Location: Codable {
@@ -33,8 +33,8 @@ struct Current: Codable {
     let wind: Double
     let precip: Double
     let pressure: Double
-    let temperature:Double
-    
+    let temperature: Double
+
     //Custom Keys
     enum CodingKeys: String, CodingKey {
         case wind = "wind_mph"  //Custom keys
@@ -55,7 +55,7 @@ struct Forecastday: Codable {
 }
 
 struct Day: Codable {
-    
+
     let temperature: Double
 
     enum CodingKeys: String, CodingKey {

@@ -12,16 +12,16 @@ let kAPIKey = "d99c2ede91e047b48fa62535192703"
 let kPlace = "india"
 
 struct Constant {
-    
+
     static let BASE_URL = Constant.apiBaseURL()
 
     static func apiBaseURL() -> String {
         return "http://api.apixu.com/v1/"
     }
-    
-    //MARK:- API Urls
+
+    // MARK: - API Urls
     struct API {
-        
+
         static let currentWeather = "current.json?key=\(kAPIKey)&q=\(kPlace)"
         static let forecastWeather = "forecast.json?key=\(kAPIKey)&q=\(kPlace)&days=5"
 
@@ -29,11 +29,9 @@ struct Constant {
             return BASE_URL + methodName
         }
     }
-    
+
     struct ServerKey {
         static let status = "status"
         static let result = "results"
     }
 }
-
-

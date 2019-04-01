@@ -27,6 +27,11 @@ class DemoAppUITests: XCTestCase {
     }
 
     func testExample() {
+        //XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .table).element.tap()
+
+        //let app = XCUIApplication()
+       //let table = app.tables["BYZ-38-t0r"]
+        //print(tah)
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

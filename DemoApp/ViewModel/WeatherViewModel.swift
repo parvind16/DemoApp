@@ -10,26 +10,23 @@ import Foundation
 
 var weatherViewModels: [WeatherViewModel] = []
 
-class WeatherViewModel
-{
+class WeatherViewModel {
 
     let weatherDataModel: WeatherDataModel
-    init(weatherDataModel: WeatherDataModel)
-    {
+    init(weatherDataModel: WeatherDataModel) {
         self.weatherDataModel = weatherDataModel
     }
-    
+
     public var placeInfo: String {
         return weatherDataModel.location.name+", \(weatherDataModel.location.country)"+", \(weatherDataModel.location.region)"
     }
-    
+
     public var weatherDescription: String {
         return "Wind: \(weatherDataModel.current.wind) mph\n"+"Precip: \(weatherDataModel.current.precip) in\n"+"Pressure: \(weatherDataModel.current.pressure) in"
     }
-    
+
     public var temperature: String {
         return
             "\(weatherDataModel.current.temperature) °F"
     }
 }
-

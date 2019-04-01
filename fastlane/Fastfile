@@ -22,7 +22,8 @@ platform :ios do
 	sonar(
   	project_key: "DemoApp",
   	project_version: "1.0",
-  	project_name: "iOS - DemoApp",
+  	project_name: "DemoApp",
+	project_language:"swift",
   	sources_path: File.expand_path("../DemoApp")
 	)
   end

@@ -7,7 +7,8 @@ target 'DemoApp' do
   
   # Pods for DemoApp
   pod 'OHHTTPStubs/Swift'
-  
+  pod 'SwiftLint'
+
   target 'DemoAppTests' do
     inherit! :search_paths
     # Pods for testing
@@ -16,6 +17,8 @@ target 'DemoApp' do
   target 'DemoAppUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OHHTTPStubs/Swift'
+
   end
   
 end
